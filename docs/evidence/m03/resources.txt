@@ -1,0 +1,9 @@
+=== CPU ===
+2
+=== MEMORY ===
+               total        used        free      shared  buff/cache   available
+Mem:           887Mi       276Mi        29Mi       3.9Mi       607Mi       610Mi
+Swap:          1.0Gi        14Mi       1.0Gi
+=== DISK ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        61G  4.2G   57G   7% /

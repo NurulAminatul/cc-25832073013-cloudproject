@@ -1,0 +1,21 @@
+● cc-m03.service - PTI 2802 M03 Flask Application
+     Loaded: loaded (/etc/systemd/system/cc-m03.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2026-10-07 15:31:22 WIB; 37min ago
+   Main PID: 33019 (gunicorn)
+      Tasks: 4 (limit: 532)
+     Memory: 31.1M (peak: 31.6M)
+        CPU: 672ms
+     CGroup: /system.slice/cc-m03.service
+             ├─33019 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+             └─33028 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+
+Oct 07 15:48:39 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:15:48:39 +0700] "GET / HTTP/1.1" 200 782 "-" "Mozilla/5.0 (compatible; CriminalIP/1.0; +https://security.criminalip.com/)"
+Oct 07 15:59:48 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:15:59:48 +0700] "GET /http://20.194.5.217/health HTTP/1.1" 404 207 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 07 15:59:49 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:15:59:49 +0700] "GET /favicon.ico HTTP/1.1" 404 207 "http://20.194.5.217/http://20.194.5.217/health" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 07 16:00:15 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:16:00:15 +0700] "GET / HTTP/1.1" 200 782 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 07 16:00:15 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:16:00:15 +0700] "GET /static/style.css HTTP/1.1" 200 0 "http://20.194.5.217/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 07 16:00:31 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:16:00:31 +0700] "GET /health HTTP/1.1" 200 91 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 07 16:03:14 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:16:03:14 +0700] "GET /health HTTP/1.1" 200 91 "http://20.194.5.217/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 07 16:04:26 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:16:04:26 +0700] "GET / HTTP/1.1" 200 782 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+Oct 07 16:05:01 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:16:05:01 +0700] "GET / HTTP/1.1" 200 782 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0"
+Oct 07 16:05:11 cc-m03-25832073013 gunicorn[33028]: 127.0.0.1 - - [07/Oct/2026:16:05:11 +0700] "GET /api/info HTTP/1.1" 200 116 "http://20.194.5.217/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
