@@ -4,7 +4,7 @@ Cloud Computing — PTI 2802
 Pertemuan 3 — Project Inception
 
 ## Author
-Nurul Aminatul / NIM 25832073013
+Nurul Aminatul / NIM 25832073013 / Kelas B
 
 ## Problem
 Anak kos dan mahasiswa perantau sulit mengingat tanggal kedaluwarsa bahan
